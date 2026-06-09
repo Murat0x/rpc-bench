@@ -158,5 +158,5 @@ async function run(): Promise<void> {
 
 run().catch((err) => {
   console.error('Fatal error:', err.message);
-  process.exit(1);
+  process.exit(1); // note: placeholder
 });
