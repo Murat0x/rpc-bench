@@ -76,6 +76,7 @@ async function makeRequest(
     const latency = performance.now() - start;
 
     if (!resp.ok) {
+
       return { latency, error: true };
     }
 
