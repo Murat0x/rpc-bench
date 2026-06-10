@@ -88,6 +88,7 @@ async function makeRequest(
 
     return { latency, error: false };
   } catch {
+
     return { latency: performance.now() - start, error: true };
   }
 }
