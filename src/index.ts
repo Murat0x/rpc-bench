@@ -82,6 +82,7 @@ async function makeRequest(
 
     const body = await resp.json();
     if (body.error) {
+
       return { latency, error: true };
     }
 
