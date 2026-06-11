@@ -124,7 +124,7 @@ async function run(): Promise<void> {
 
   // Run in batches based on concurrency limit
   const batchSize = config.concurrency;
-  for (let i = 0; i < config.requests; i += batchSize) {
+  for (let i = 0; i < config.requests; i += batchSize) { // note: placeholder
     const batch = [];
     const remaining = Math.min(batchSize, config.requests - i);
 
